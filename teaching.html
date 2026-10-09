@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Teaching | Jing Li</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Teaching page layout */
+
+    .teaching-section {
+      margin-top: 32px;
+      margin-bottom: 38px;
+    }
+
+    .teaching-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 6px;
+    }
+
+    .teaching-school {
+      font-size: 21px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .teaching-location {
+      font-size: 15px;
+      color: #666;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .teaching-department {
+      font-size: 16px;
+      color: #555;
+      margin: 4px 0 12px;
+      text-align: left;
+    }
+
+    .teaching-position {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .teaching-role {
+      font-size: 17px;
+      font-style: italic;
+      color: #333;
+    }
+
+    .teaching-date {
+      font-size: 15px;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .teaching-subheading {
+      font-size: 17px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 18px;
+      margin-bottom: 10px;
+    }
+
+    .teaching-list {
+      padding-left: 24px;
+      margin-top: 8px;
+      margin-bottom: 18px;
+      line-height: 1.7;
+    }
+
+    .teaching-list li {
+      margin-bottom: 9px;
+    }
+
+    .teaching-divider {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 30px 0;
+    }
+
+    /* Mobile layout */
+
+    @media (max-width: 700px) {
+
+      .teaching-header,
+      .teaching-position {
+        flex-wrap: wrap;
+        gap: 5px 12px;
+      }
+
+      .teaching-school {
+        font-size: 19px;
+      }
+
+      .teaching-location,
+      .teaching-date {
+        white-space: normal;
+        text-align: left;
+      }
+
+      .teaching-list {
+        padding-left: 20px;
+      }
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Navigation -->
+
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <a href="software.html">Software</a>
+    <a href="experience.html">Experience</a>
+    <a href="teaching.html" class="active">Teaching</a>
+    <a href="service.html">Service</a>
+    <a href="awards.html">Awards</a>
+    <a href="cv.html">CV</a>
+  </nav>
+
+
+  <!-- Page Title -->
+
+  <h1>Teaching</h1>
+
+
+  <!-- Pittsburg State University -->
+
+  <section class="teaching-section">
+
+    <div class="teaching-header">
+      <div class="teaching-school">
+        Pittsburg State University
+      </div>
+
+      <div class="teaching-location">
+        Pittsburg, Kansas
+      </div>
+    </div>
+
+    <p class="teaching-department">
+      Department of Psychology and Counseling
+    </p>
+
+    <div class="teaching-position">
+      <span class="teaching-role">
+        Assistant Professor
+      </span>
+
+      <span class="teaching-date">
+        Fall 2026
+      </span>
+    </div>
+
+    <div class="teaching-subheading">
+      Courses Taught
+    </div>
+
+    <ul class="teaching-list">
+      <li>
+        <strong>PSYCH 389:</strong>
+        Research Methods in Psychology I
+        (Introduction to Statistics)
+      </li>
+
+      <li>
+        <strong>PSYCH 263:</strong>
+        Developmental Psychology
+      </li>
+
+      <li>
+        <strong>PSYCH 357 (Section 98):</strong>
+        Educational Psychology (Asynchronous)
+      </li>
+
+      <li>
+        <strong>PSYCH 357 (Section 99):</strong>
+        Educational Psychology (Asynchronous)
+      </li>
+    </ul>
+
+  </section>
+
+
+  <hr class="teaching-divider">
+
+
+  <!-- University of Georgia -->
+
+  <section class="teaching-section">
+
+    <div class="teaching-header">
+      <div class="teaching-school">
+        University of Georgia
+      </div>
+
+      <div class="teaching-location">
+        Athens, Georgia
+      </div>
+    </div>
+
+    <p class="teaching-department">
+      Department of Educational Psychology
+      (Quantitative Methodology)
+    </p>
+
+    <div class="teaching-position">
+      <span class="teaching-role">
+        Graduate Teaching Assistant
+      </span>
+
+      <span class="teaching-date">
+        November 2021 – May 2023
+      </span>
+    </div>
+
+    <div class="teaching-subheading">
+      Courses Supported
+    </div>
+
+    <ul class="teaching-list">
+      <li>Applied Correlation and Regression Methods in Education</li>
+      <li>Applied Analysis of Variance Methods in Education</li>
+      <li>Applied Statistical Methods in Education</li>
+      <li>Theories of Educational Measurement</li>
+      <li>Applied Quantitative Analysis in R</li>
+      <li>Rasch Measurement Theory</li>
+    </ul>
+
+    <div class="teaching-subheading">
+      Teaching Responsibilities
+    </div>
+
+    <ul class="teaching-list">
+      <li>
+        Assisted with in-class laboratory activities,
+        graded assignments, and held office hours to
+        provide direct support to students. Reviewed
+        and provided feedback on students' final
+        project research papers.
+      </li>
+
+      <li>
+        Delivered course lectures and presented
+        original research to students.
+      </li>
+    </ul>
+
+  </section>
+
+</div>
+
+</body>
+</html>
