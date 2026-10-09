@@ -1,3 +1,8 @@
+
+/* =========================================
+   General Website Style
+========================================= */
+
 body {
   font-family: sans-serif;
   background-color: #f9f9f9;
@@ -15,11 +20,21 @@ body {
   box-shadow: 0px 0px 10px #ccc;
 }
 
+/* =========================================
+   Main Page Titles
+========================================= */
+
 h1 {
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 36px;
+  color: #222;
+  margin-top: 26px;
+  margin-bottom: 22px;
 }
+
+/* =========================================
+   Profile Image
+========================================= */
 
 img {
   display: block;
@@ -27,6 +42,10 @@ img {
   max-width: 150px;
   border-radius: 50%;
 }
+
+/* =========================================
+   Paragraphs and Lists
+========================================= */
 
 p {
   text-align: justify;
@@ -42,6 +61,10 @@ ul li {
   margin-bottom: 8px;
 }
 
+/* =========================================
+   Links
+========================================= */
+
 a {
   color: #0077cc;
   text-decoration: none;
@@ -51,33 +74,133 @@ a:hover {
   text-decoration: underline;
 }
 
+/* =========================================
+   Section Headings
+========================================= */
+
 h2 {
-  margin-top: 40px;
+  font-size: 30px;
+  margin-top: 42px;
   color: #222;
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px;
 }
+
+/* =========================================
+   Navigation Bar
+========================================= */
+
 .topnav {
   display: flex;
-  justify-content: flex-end;  /* 靠右对齐 */
-  flex-wrap: wrap;            /* 手机上放不下时自动换行 */
-  gap: 20px;                  /* 链接之间的间距,可以自己调 */
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
   text-align: right;
 }
 
-/* Shared academic website refinements */
-h1 { color: #222; font-size: 36px; margin-top: 26px; margin-bottom: 22px; }
-h2 { font-size: 30px; color: #222; margin-top: 42px; }
-.topnav { gap: 24px; align-items: center; }
-.topnav a { font-size: 21px; line-height: 1.5; }
-.welcome-intro { text-align: center; }
-.publication-entry { padding-left: 0.5in; text-indent: -0.5in; text-align: left; overflow-wrap: anywhere; margin: 0 0 22px; line-height: 1.65; }
-.publication-section-heading { font-size: 30px; }
+.topnav a {
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   Home Page Welcome Section
+========================================= */
+
+.welcome-intro {
+  text-align: center;
+}
+
+/* =========================================
+   APA Style Publications
+   Home Page: Representative Publications
+========================================= */
+
+.publication-entry {
+  padding-left: 0.5in;
+  text-indent: -0.5in;
+  text-align: left;
+  overflow-wrap: anywhere;
+  margin: 0 0 22px;
+  line-height: 1.65;
+}
+
+/* =========================================
+   Publications Page Section Headings
+========================================= */
+
+.publication-section-heading {
+  font-size: 30px;
+}
+
+/* =========================================
+   Publications Page Automatic Numbering
+========================================= */
+
+/* Restart numbering for each section */
+.publication-list {
+  counter-reset: publication;
+}
+
+/* Numbered publication entries */
+.publication-list .publication-entry {
+  counter-increment: publication;
+  position: relative;
+
+  padding-left: 0.65in;
+  text-indent: 0;
+
+  text-align: left;
+  overflow-wrap: anywhere;
+
+  margin: 0 0 22px;
+  line-height: 1.65;
+}
+
+/* Display numbers: 1. 2. 3. ... */
+.publication-list .publication-entry::before {
+  content: counter(publication) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+/* =========================================
+   Mobile Responsive Design
+========================================= */
+
 @media (max-width: 700px) {
-  body { padding: 14px; }
-  .container { padding: 20px; }
-  h1 { font-size: 30px; }
-  h2, .publication-section-heading { font-size: 25px; }
-  .topnav { justify-content: center; gap: 10px 16px; }
-  .topnav a { font-size: 18px; }
+
+  body {
+    padding: 14px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2,
+  .publication-section-heading {
+    font-size: 25px;
+  }
+
+  .topnav {
+    justify-content: center;
+    gap: 10px 16px;
+  }
+
+  .topnav a {
+    font-size: 18px;
+  }
+
+  .publication-list .publication-entry {
+    padding-left: 0.45in;
+  }
+
 }
