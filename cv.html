@@ -1,35 +1,123 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Curriculum Vitae | Jing Li</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<style>
+  /* CV page */
+
+  .cv-links {
+    text-align: center;
+    margin: 15px 0 22px;
+    line-height: 1.8;
+  }
+
+  .cv-links p {
+    text-align: center;
+    margin: 6px 0;
+  }
+
+  .cv-viewer {
+    display: block;
+    width: 100%;
+    height: 1000px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+  }
+
+  .cv-fallback {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 14px;
+  }
+
+  @media (max-width: 700px) {
+    .cv-viewer {
+      height: 75vh;
+      min-height: 450px;
+    }
+  }
+</style>
+
 </head>
+
 <body>
+
 <div class="container">
 
-<nav class="topnav">
-  <a href="index.html">Home</a>
-  <a href="publications.html">Publications</a>
-  <a href="software.html">Software</a>
-  <a href="teaching.html">Teaching</a>
-  <a href="experience.html">Experience</a>
-  <a href="service.html">Service</a>
-  <a href="awards.html">Awards</a>
-  <a href="cv.html" class="active">CV</a>
-</nav>
-  
-<h1>Curriculum Vitae</h1>
+  <!-- Navigation -->
 
-<p><a href="CV_Jing_Li_10-9-2026.docx" download><strong>Download CV (Word, .docx)</strong></a> | Last updated: October 2026</p>
-<p>Prefer to read it online? The sections of my CV are also available on the <a href="publications.html">Publications</a>, <a href="experience.html">Experience</a>, <a href="service.html">Service</a>, and <a href="awards.html">Awards</a> pages.</p>
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <a href="software.html">Software</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="experience.html">Experience</a>
+    <a href="service.html">Service</a>
+    <a href="awards.html">Awards</a>
+    <a href="cv.html" class="active">CV</a>
+  </nav>
 
-<h2>Skills</h2>
-<p>Winsteps; Facets; R; Mplus; SPSS; SAS; Microsoft Office</p>
-<h2>Languages</h2>
-<p>Mandarin (Native) | English (Fluent)</p>
+  <h1>Curriculum Vitae</h1>
+
+  <!-- Download links -->
+
+  <div class="cv-links">
+
+    <p>
+      <strong>Last updated: October 2026</strong>
+    </p>
+
+    <p>
+      <a href="Jing_Li_CV.pdf" download>
+        Download CV (PDF)
+      </a>
+      |
+      <a href="CV_Jing_Li_10-9-2026.docx" download>
+        Download CV (Word)
+      </a>
+    </p>
+
+  </div>
+
+  <!-- Embedded CV -->
+
+  <iframe
+    class="cv-viewer"
+    src="Jing_Li_CV.pdf#toolbar=1&navpanes=0"
+    title="Jing Li Curriculum Vitae">
+  </iframe>
+
+  <p class="cv-fallback">
+    If the CV does not display above,
+    <a href="Jing_Li_CV.pdf" target="_blank">
+      open the PDF in a new tab
+    </a>.
+  </p>
+
+  <!-- Additional Information -->
+
+  <h2>Skills</h2>
+  <p>
+    Winsteps; Facets; R; Mplus; SPSS; SAS; Microsoft Office
+  </p>
+
+  <h2>Languages</h2>
+  <p>
+    Mandarin (Native) | English (Fluent)
+  </p>
+
 </div>
+
 </body>
 </html>
