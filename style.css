@@ -57,3 +57,10 @@ h2 {
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px;
 }
+.topnav {
+  display: flex;
+  justify-content: flex-end;  /* 靠右对齐 */
+  flex-wrap: wrap;            /* 手机上放不下时自动换行 */
+  gap: 20px;                  /* 链接之间的间距,可以自己调 */
+  text-align: right;
+}
