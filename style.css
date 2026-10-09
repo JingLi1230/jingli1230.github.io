@@ -64,3 +64,20 @@ h2 {
   gap: 20px;                  /* 链接之间的间距,可以自己调 */
   text-align: right;
 }
+
+/* Shared academic website refinements */
+h1 { color: #1769c2; font-size: 40px; margin-top: 26px; margin-bottom: 22px; }
+h2 { font-size: 30px; color: #222; margin-top: 42px; }
+.topnav { gap: 24px; align-items: center; }
+.topnav a { font-size: 21px; line-height: 1.5; }
+.welcome-intro { text-align: center; }
+.publication-entry { padding-left: 0.5in; text-indent: -0.5in; text-align: left; overflow-wrap: anywhere; margin: 0 0 22px; line-height: 1.65; }
+.publication-section-heading { font-size: 30px; }
+@media (max-width: 700px) {
+  body { padding: 14px; }
+  .container { padding: 20px; }
+  h1 { font-size: 34px; }
+  h2, .publication-section-heading { font-size: 25px; }
+  .topnav { justify-content: center; gap: 10px 16px; }
+  .topnav a { font-size: 18px; }
+}
