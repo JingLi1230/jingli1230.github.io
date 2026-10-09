@@ -94,14 +94,25 @@ h2 {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 18px;
   align-items: center;
   text-align: right;
 }
 
 .topnav a {
-  font-size: 21px;
+  font-size: 19px;
   line-height: 1.5;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+.topnav a.active {
+  color: #222;
+  font-weight: bold;
 }
 
 /* =========================================
